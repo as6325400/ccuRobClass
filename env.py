@@ -4,6 +4,12 @@ USERID = "407725039"
 PASSWORD = "ccu25039"
 URL = "http://140.123.30.101/~ccmisp98/cgi-bin/class/bookmark.php"
 
+# 多少次搶課後要重新登錄一次，預設150
+ROUNDTIMES = 150
+
+# 一秒送出多少次請求，預設三次，最多可到10次
+TIMESINONESECOND = 3
+
 # 這邊存想搶課程的payload
 # session_id 在 main 拿
 ROBCLASSLIST = [
