@@ -9,6 +9,7 @@ count = 0
 
 classList = ROBCLASSLIST
 
+
 while True:
     SESSIONID = login.getSession()
     count += 1
