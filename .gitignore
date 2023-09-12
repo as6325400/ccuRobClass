@@ -1,2 +1,4 @@
 test.py
 .DS_store
+__pycache__
+tool/__pycache__
