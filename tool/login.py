@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup as bs
 from env import *
 
 def getSession():
-    response = requests.post(URL, data={"id" : USERID, "password" : PASSWORD})
+    response = requests.post(URL + LOGINROUTER, data={"id" : USERID, "password" : PASSWORD})
     response.encoding = 'UTF-8'
     loginWeb = bs(response.text, features='html.parser')
     loginLog = loginWeb.title.string

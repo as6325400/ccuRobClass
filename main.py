@@ -4,7 +4,7 @@ from time import sleep
 import datetime
 from tool import login
 from tqdm import tqdm
-from env import ROBCLASSLIST, ROUNDTIMES, TIMESINONESECOND
+from env import *
 
 Robclass = False
 count = 0
@@ -14,13 +14,14 @@ classList = ROBCLASSLIST
 
 while True:
     SESSIONID = login.getSession()
+    # print(SESSIONID)
     count += 1
     print(count, end=" ")
     for i in tqdm(range(1, ROUNDTIMES + 1)):
         sleep(1 / TIMESINONESECOND)
         paylaod = classList[i % len(classList)]
         paylaod['session_id'] = SESSIONID
-        response = requests.post("http://140.123.30.101/~ccmisp98/cgi-bin/class/Add_Course01.cgi", paylaod)
+        response = requests.post(URL + ROBCLASSROUTER, paylaod)
         response.encoding = 'UTF-8'
         val = bs(response.text, features='html.parser')
         ans = str(val.find_all('font'))

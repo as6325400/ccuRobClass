@@ -1,8 +1,10 @@
 # 設定帳密資料等
 
-USERID = "407725039"
-PASSWORD = "ccu25039"
-URL = "http://140.123.30.101/~ccmisp98/cgi-bin/class/bookmark.php"
+USERID = ""
+PASSWORD = ""
+URL = "https://kiki.ccu.edu.tw/~ccmisp06/cgi-bin/class_new/"
+LOGINROUTER = "bookmark.php"
+ROBCLASSROUTER = "Add_Course01.cgi"
 
 # 多少次搶課後要重新登錄一次，預設150
 ROUNDTIMES = 150
