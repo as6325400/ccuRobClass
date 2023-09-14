@@ -1,6 +1,6 @@
 # ccuRobClass
 
-## 環境設置
+## 環境設置(擇一就好)
 
 ### Python(建議)
 自行安裝python
@@ -131,7 +131,7 @@ ROUNDTIMES = 150
 TIMESINONESECOND = 3
 ```
 
-## 執行
+## 執行（看你環境上面用哪個）
 
 ### Python(建議)
 ```shell=
