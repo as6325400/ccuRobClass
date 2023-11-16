@@ -2,7 +2,10 @@
 
 USERID = ""
 PASSWORD = ""
-URL = "https://kiki.ccu.edu.tw/~ccmisp06/cgi-bin/class_new/"
+# 正式機
+# URL = "https://kiki.ccu.edu.tw/~ccmisp06/cgi-bin/class_new/"
+URL = "http://140.123.30.101/~ccmisp98/cgi-bin/class/"
+
 LOGINROUTER = "bookmark.php"
 ROBCLASSROUTER = "Add_Course01.cgi"
 
@@ -14,28 +17,30 @@ TIMESINONESECOND = 1000
 
 # 這邊存想搶課程的payload
 # session_id 在 main 拿
+
+
 ROBCLASSLIST = [
-    # 林妙香 四 2,3
+    # 星空探索 二 2,3
     {
-        "session_id": "F7HGqqPH9OYE8mWXN12Q2I5MBnZ5TVpw2492",
+        "session_id": "6RA9SHNL1AQE8mWXN12Q2IBXpqhykwBmY619",
         "dept": "I001",
         "grade": "1",
         "cge_cate": "2",
-        "cge_subcate": "4",
+        "cge_subcate": "6",
         "page": "2",
         "e": "0",
         "m": "0",
         "SelectTag": "1",
-        "7404018_01": "3",
-        "7404031_01": "3",
-        "7406037_01": "3",
-        "7406039_01": "3",
-        "7407026_01": "3",
-        "7407026_02": "3",
-        "course": "7407027_01",
-        "7407027_01": "3",
-        "7407027_02": "3",
-        "7407027_03": "3",
-        "7407027_04": "3"
+        "7500030_02": "3",
+        "7501019_01": "3",
+        "7502001_01": "3",
+        "7502002_01": "3",
+        "7503012_01": "3",
+        "7505010_01": "3",
+        "7506011_01": "3",
+        "course": "7506012_01",
+        "7506012_01": "3",
+        "7506012_02": "3",
+        "7506014_01": "3"
     }
 ]
